@@ -3,6 +3,11 @@ const nu = document.getElementById("nuButton");
 const mesajDa = document.getElementById("mesajDa");
 const mesajNu = document.getElementById("mesajNu");
 
+const sabie = document.getElementById("sabie");
+const arc = document.getElementById("arc");
+const toiag = document.getElementById("toiag");
+const shuriken = document.getElementById("shuriken");
+
 
 
 da.addEventListener("click" , function(){
