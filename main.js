@@ -36,6 +36,7 @@ curcubeu.style.display = "none";
 const dragonText = document.getElementById("introducereDragon");
 const dragon = document.getElementById("dragon");
 const baraProgres = document.getElementById("viataDragon");
+const textProgres =document.getElementById("textProgres");
 
 dragon.style.display = "none";
 baraProgres.style.display = "none";
@@ -43,7 +44,7 @@ baraProgres.style.display = "none";
 //text introductiv
 
 const textSalut = document.getElementById("textSalut");
-const textIntroductiv = document.getElementById("textIntroducere")
+const textIntroductiv = document.getElementById("textIntroducere");
 
 
 //buton DA! functionalitate
@@ -122,6 +123,9 @@ rosu.addEventListener("click" , function(){
 
     setTimeout(() => {
         sabie.style.display = "none" ;
+        toiag.style.display = "none";
+        arc.style.display = "none";
+        shuriken.style.display = "none";
     },100)
     
     setTimeout(() => {
@@ -141,6 +145,7 @@ rosu.addEventListener("click" , function(){
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
+        textProgres.innerHTML = "(apasa click pe eroare pentru a o invinge)"
     }, 3000);
     
     
@@ -160,6 +165,9 @@ verde.addEventListener("click" , function(){
 
     setTimeout(() => {
         sabie.style.display = "none" ;
+        toiag.style.display = "none";
+        arc.style.display = "none";
+        shuriken.style.display = "none";
     },100)
     
     setTimeout(() => {
@@ -179,6 +187,7 @@ verde.addEventListener("click" , function(){
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
+        textProgres.innerHTML = "(apasa click pe eroare pentru a o invinge)"
     }, 3000); 
 
 });
@@ -196,6 +205,9 @@ curcubeu.addEventListener("click" , function(){
 
     setTimeout(() => {
         sabie.style.display = "none" ;
+        toiag.style.display = "none";
+        arc.style.display = "none";
+        shuriken.style.display = "none";
     },100)
     
     setTimeout(() => {
@@ -215,6 +227,7 @@ curcubeu.addEventListener("click" , function(){
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
+        textProgres.innerHTML = "(apasa click pe eroare pentru a o invinge)"
     }, 3000); 
 
 });
