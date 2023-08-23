@@ -12,9 +12,13 @@
 };
 
 .butonNu{
-    background-color:brown;
+    background-color:rgb(204, 53, 53);
     color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
+};
+
+.arma-aleasa{
+    color:rgb(14, 53, 120);
 };
