@@ -20,6 +20,7 @@ shuriken.style.display = "none";
 //alege armele / magiile pe care le folosite
 const armaAleasa = document.getElementById("mesajArmaAleasa");
 const colecteazaArma = document.getElementById("colecteazaArmaAleasa");
+const magiaAleasa = document.getElementById("magiaAleasa");
 
 //magiile pe care le poti alege
 const rosu = document.getElementById("rosu");
@@ -84,4 +85,23 @@ colecteazaArma.addEventListener("click" , function(){
     rosu.style.display = "block";
     verde.style.display = "block";
     curcubeu.style.display = "block";
-})
+    colecteazaArma.innerHTML = "Alege-ti acum magia!"
+});
+
+rosu.addEventListener("click" , function(){
+    verde.style.display = "none";
+    curcubeu.style.display = "none";
+    magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia functilor!"
+});
+
+verde.addEventListener("click" , function(){
+    rosu.style.display = "none";
+    curcubeu.style.display = "none";
+    magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia for-urilor!"
+});
+
+curcubeu.addEventListener("click" , function(){
+    verde.style.display = "none";
+    rosu.style.display = "none";
+    magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia DOM-ului!"
+});
