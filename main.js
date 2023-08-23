@@ -40,6 +40,11 @@ const baraProgres = document.getElementById("viataDragon");
 dragon.style.display = "none";
 baraProgres.style.display = "none";
 
+//text introductiv
+
+const textSalut = document.getElementById("textSalut");
+const textIntroductiv = document.getElementById("textIntroducere")
+
 
 //buton DA! functionalitate
 da.addEventListener("click" , function(){
@@ -110,6 +115,8 @@ rosu.addEventListener("click" , function(){
     //Aparitie dragon
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
@@ -146,6 +153,8 @@ verde.addEventListener("click" , function(){
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia for-urilor!"
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
@@ -180,6 +189,8 @@ curcubeu.addEventListener("click" , function(){
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia DOM-ului!"
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
