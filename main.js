@@ -32,6 +32,16 @@ rosu.style.display = "none";
 verde.style.display = "none";
 curcubeu.style.display = "none";
 
+//dragon
+const dragonText = document.getElementById("introducereDragon");
+const dragon = document.getElementById("dragon");
+const baraProgres = document.getElementById("viataDragon");
+
+dragon.style.display = "none";
+baraProgres.style.display = "none";
+
+
+//buton DA! functionalitate
 da.addEventListener("click" , function(){
     da.style.display = "none";
     nu.style.display = "none";
@@ -42,13 +52,14 @@ da.addEventListener("click" , function(){
     shuriken.style.display = "block";
 });
 
+//Buton NU! functionalitate
 nu.addEventListener("click" , function(){
     nu.style.display = "none";
     da.style.display = "none";
     mesajNu.innerHTML= "Pe data viitoare!"
 });
 
-
+//Functionalitate arme
 sabie.addEventListener("click" , function(){
     arc.style.display = "none";
     toiag.style.display = "none";
@@ -81,6 +92,8 @@ shuriken.addEventListener("click" , function(){
     colecteazaArma.innerHTML = "Colecteaza-ti arma , calatorule!"
 });
 
+
+//Functie 'colecteaza arma'
 colecteazaArma.addEventListener("click" , function(){
     rosu.style.display = "block";
     verde.style.display = "block";
@@ -88,20 +101,73 @@ colecteazaArma.addEventListener("click" , function(){
     colecteazaArma.innerHTML = "Alege-ti acum magia!"
 });
 
+//functionalitate magii
 rosu.addEventListener("click" , function(){
     verde.style.display = "none";
     curcubeu.style.display = "none";
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia functilor!"
+
+    //Aparitie dragon
+
+    setTimeout(() => {
+        mesajDa.innerHTML= "Oh nu! Ce se aude?";
+    },100)
+
+    setTimeout(() => {
+        sabie.style.display = "none" ;
+    },100)
+
+    setTimeout(() => {
+        dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
+        dragon.style.display = "block";
+        baraProgres.style.display = "block";
+    }, 1000);
+    
+    
+
 });
 
 verde.addEventListener("click" , function(){
     rosu.style.display = "none";
     curcubeu.style.display = "none";
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia for-urilor!"
+
+    setTimeout(() => {
+        mesajDa.innerHTML= "Oh nu! Ce se aude?";
+    },100)
+
+    setTimeout(() => {
+        sabie.style.display = "none" ;
+    },100)
+
+    setTimeout(() => {
+        dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
+        dragon.style.display = "block";
+        baraProgres.style.display = "block";
+    }, 1000); 
+
 });
 
 curcubeu.addEventListener("click" , function(){
     verde.style.display = "none";
     rosu.style.display = "none";
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia DOM-ului!"
+
+    setTimeout(() => {
+        mesajDa.innerHTML= "Oh nu! Ce se aude?";
+    },100)
+
+    setTimeout(() => {
+        sabie.style.display = "none" ;
+    },100)
+
+    setTimeout(() => {
+        dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
+        dragon.style.display = "block";
+        baraProgres.style.display = "block";
+    }, 1000); 
+
 });
+
+
+//"Poate fi... nu , nu are cum"
