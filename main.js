@@ -47,6 +47,16 @@ const textSalut = document.getElementById("textSalut");
 const textIntroductiv = document.getElementById("textIntroducere");
 
 
+//premii final
+
+const cadou = document.getElementById("cadouFinal");
+const pisica = document.getElementById("kittyKiss");
+const textFinal = document.getElementById("textFinal");
+
+cadou.style.display = "none";
+pisica.style.display = "none";
+
+
 //buton DA! functionalitate
 da.addEventListener("click" , function(){
     da.style.display = "none";
@@ -255,11 +265,13 @@ dragon.addEventListener("click" , function(){
             dragon.style.display = "none";
             baraProgres.style.display = "none";
             textProgres.innerHTML = ""
+            cadou.style.display = "block";
         }, 1000)
     
     }
 })
 
-
-
-
+cadou.addEventListener("click" , function(){
+    pisica.style.display = "block";
+    textFinal.innerText = "Felicitari calatorule! Ai terminat cea mai grea aventura din JavaScript";
+})
