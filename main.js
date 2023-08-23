@@ -116,12 +116,25 @@ rosu.addEventListener("click" , function(){
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+        rosu.style.display = "none";
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000);
+    }, 3000);
     
     
 
@@ -139,12 +152,25 @@ verde.addEventListener("click" , function(){
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        verde.style.display = "none";
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000); 
+    }, 3000); 
 
 });
 
@@ -160,14 +186,26 @@ curcubeu.addEventListener("click" , function(){
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+        curcubeu.style.display = "none";
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000); 
+    }, 3000); 
 
 });
 
 
-//"Poate fi... nu , nu are cum"
