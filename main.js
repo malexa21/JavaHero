@@ -273,5 +273,6 @@ dragon.addEventListener("click" , function(){
 
 cadou.addEventListener("click" , function(){
     pisica.style.display = "block";
-    textFinal.innerText = "Felicitari calatorule! Ai terminat cea mai grea aventura din JavaScript";
+    cadou.style.display = "none";
+    textFinal.innerHTML = "Felicitari calatorule! Ai terminat cea mai grea aventura din JavaScript";
 })
