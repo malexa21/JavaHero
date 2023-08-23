@@ -244,10 +244,14 @@ dragon.addEventListener("click" , function(){
         setTimeout(() => {
         textSalut.innerHTML = "";
         textIntroductiv.innerHTML ="";
+        mesajDa.innerHTML= "";
+        armaAleasa.innerHTML = "";
+        colecteazaArma.innerHTML = "";
+        magiaAleasa.innerHTML = "";
         },100)
 
         setTimeout(() => {
-            dragonText.innerHTML= "Nu se poate , ai invins marea eroare"
+            dragonText.innerHTML= "Nu se poate , ai invins marea eroare..."
             dragon.style.display = "none";
             baraProgres.style.display = "none";
             textProgres.innerHTML = ""
