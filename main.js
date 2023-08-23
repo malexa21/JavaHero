@@ -37,6 +37,7 @@ const dragonText = document.getElementById("introducereDragon");
 const dragon = document.getElementById("dragon");
 const baraProgres = document.getElementById("viataDragon");
 const textProgres =document.getElementById("textProgres");
+const min = 0;
 
 dragon.style.display = "none";
 baraProgres.style.display = "none";
@@ -236,5 +237,17 @@ curcubeu.addEventListener("click" , function(){
 //functionalitate bara progres
 
 dragon.addEventListener("click" , function(){
-    baraProgres.value -= 15;
+    baraProgres.value -= 20;
 })
+
+
+
+if (baraProgres.value = min){
+
+    setTimeout(() => {
+        dragonText.innerHTML= "Nu se poate , ai invins marea eroare"
+        dragon.style.display = "none";
+        baraProgres.style.display = "none";
+        textProgres.innerHTML = ""
+    }, 1000)
+}
