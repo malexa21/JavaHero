@@ -1,6 +1,5 @@
 .arme{
     display: inline-block;
-    vertical-align:bottom;
 }
 
 .butonDa{
@@ -22,3 +21,7 @@
 .arma-aleasa{
     color:rgb(14, 53, 120);
 };
+
+.magii{
+    display: inline-block;
+}

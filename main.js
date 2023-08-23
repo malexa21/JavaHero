@@ -1,20 +1,35 @@
+//butoane principale
 const da = document.getElementById("daButton");
 const nu = document.getElementById("nuButton");
 const mesajDa = document.getElementById("mesajDa");
 const mesajNu = document.getElementById("mesajNu");
 
+//arme
 const sabie = document.getElementById("sabie");
 const arc = document.getElementById("arc");
 const toiag = document.getElementById("toiag");
 const shuriken = document.getElementById("shuriken");
 
+//face armele sa fie invizibile la inceput
 sabie.style.display = "none";
 arc.style.display = "none";
 toiag.style.display = "none";
 shuriken.style.display = "none";
 
+
+//alege armele / magiile pe care le folosite
 const armaAleasa = document.getElementById("mesajArmaAleasa");
 const colecteazaArma = document.getElementById("colecteazaArmaAleasa");
+
+//magiile pe care le poti alege
+const rosu = document.getElementById("rosu");
+const verde = document.getElementById("verde");
+const curcubeu = document.getElementById("curcubeu");
+
+//face magiile invizibile pana la alegere
+rosu.style.display = "none";
+verde.style.display = "none";
+curcubeu.style.display = "none";
 
 da.addEventListener("click" , function(){
     da.style.display = "none";
@@ -65,3 +80,8 @@ shuriken.addEventListener("click" , function(){
     colecteazaArma.innerHTML = "Colecteaza-ti arma , calatorule!"
 });
 
+colecteazaArma.addEventListener("click" , function(){
+    rosu.style.display = "block";
+    verde.style.display = "block";
+    curcubeu.style.display = "block";
+})
