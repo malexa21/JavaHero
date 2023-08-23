@@ -20,7 +20,7 @@ shuriken.style.display = "none";
 //alege armele / magiile pe care le folosite
 const armaAleasa = document.getElementById("mesajArmaAleasa");
 const colecteazaArma = document.getElementById("colecteazaArmaAleasa");
-const magiaAleasa = document.getElementById("magiaAleasa");
+const magiaAleasa = document.getElementById("alegeMagia");
 
 //magiile pe care le poti alege
 const rosu = document.getElementById("rosu");
