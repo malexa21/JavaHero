@@ -40,6 +40,11 @@ const baraProgres = document.getElementById("viataDragon");
 dragon.style.display = "none";
 baraProgres.style.display = "none";
 
+//text introductiv
+
+const textSalut = document.getElementById("textSalut");
+const textIntroductiv = document.getElementById("textIntroducere")
+
 
 //buton DA! functionalitate
 da.addEventListener("click" , function(){
@@ -110,18 +115,33 @@ rosu.addEventListener("click" , function(){
     //Aparitie dragon
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+        rosu.style.display = "none";
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000);
+    }, 3000);
     
     
 
@@ -133,18 +153,33 @@ verde.addEventListener("click" , function(){
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia for-urilor!"
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        verde.style.display = "none";
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000); 
+    }, 3000); 
 
 });
 
@@ -154,20 +189,34 @@ curcubeu.addEventListener("click" , function(){
     magiaAleasa.innerHTML= "Wow , ce alegere buna! Ai alesa magia DOM-ului!"
 
     setTimeout(() => {
+        textSalut.innerText = "RWAAAAAR";
+        textIntroductiv.innerText ="*in aer apare un fum dens*";
         mesajDa.innerHTML= "Oh nu! Ce se aude?";
     },100)
 
     setTimeout(() => {
         sabie.style.display = "none" ;
     },100)
+    
+    setTimeout(() => {
+        armaAleasa.innerHTML = "Poate fi... nu , nu are cum";
+    },1000)
+
+    setTimeout(() => {
+        colecteazaArma.innerHTML = "*thud thud thud thud*"
+    }, 2000)
+
+    setTimeout(() => {
+        magiaAleasa.innerHTML = "*Calatorul isi strange bine mainile pe arma*"
+        curcubeu.style.display = "none";
+    }, 2000)
 
     setTimeout(() => {
         dragonText.innerHTML= "Oh nu calaorule!!! Ai intampinat o eroare giganta!"
         dragon.style.display = "block";
         baraProgres.style.display = "block";
-    }, 1000); 
+    }, 3000); 
 
 });
 
 
-//"Poate fi... nu , nu are cum"
