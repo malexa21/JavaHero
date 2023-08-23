@@ -233,3 +233,8 @@ curcubeu.addEventListener("click" , function(){
 });
 
 
+//functionalitate bara progres
+
+dragon.addEventListener("click" , function(){
+    baraProgres.value -= 15;
+})
